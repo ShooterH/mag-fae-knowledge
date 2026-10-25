@@ -1,5 +1,9 @@
 # 磁编码器 FAE 知识库
 
+[![部署状态](https://github.com/ShooterH/mag-fae-knowledge/actions/workflows/deploy.yml/badge.svg)](https://github.com/ShooterH/mag-fae-knowledge/actions/workflows/deploy.yml)
+
+在线访问：**https://shooterh.github.io/mag-fae-knowledge/**
+
 一套面向磁编码器现场支持、选型与磁路仿真的可追溯知识库。使用 Markdown 编写，MkDocs Material 构建，推送 `main` 后由 GitHub Actions 自动发布到 GitHub Pages。
 
 ## 本地预览
