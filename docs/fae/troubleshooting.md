@@ -51,7 +51,7 @@ sources:
 ## 分层排查图
 
 <figure class="kb-figure">
-  <img src="../assets/diagrams/troubleshooting-tree.svg" alt="从电源接口、原始磁场、机械磁体、固件校准到环境干扰的磁编码器分层排查图" loading="lazy">
+  <img src="../../assets/diagrams/troubleshooting-tree.svg" alt="从电源接口、原始磁场、机械磁体、固件校准到环境干扰的磁编码器分层排查图" loading="lazy">
   <figcaption>先分层、再定位的现场排障路径</figcaption>
 </figure>
 
