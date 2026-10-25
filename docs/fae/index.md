@@ -12,17 +12,10 @@
 
 ## 一次完整支持的推荐顺序
 
-```mermaid
-flowchart TD
-    A[收集需求与工况] --> B[建立误差预算]
-    B --> C{结构/磁路是否可控}
-    C -- 否 --> D[仿真或解析筛选]
-    C -- 是 --> E[样机与工装验证]
-    D --> E
-    E --> F[区分系统误差与随机误差]
-    F --> G[校准、装配或选型迭代]
-    G --> H[记录条件、结果与遗留风险]
-```
+<figure class="kb-figure">
+  <img src="../assets/diagrams/fae-workflow.svg" alt="从需求收集、误差预算、结构评估、样机验证到校准迭代和记录遗留风险的 FAE 支持流程" loading="lazy">
+  <figcaption>从需求到证据闭环的 FAE 支持流程</figcaption>
+</figure>
 
 !!! tip "先问条件，再谈精度"
     “多少度精度”若没有说明机械角范围、温度、气隙、转速、校准方式和统计口径，就不是一个可验收的指标。先统一定义，见[选型需求清单](selection.md#requirements)。

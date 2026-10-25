@@ -4,19 +4,10 @@
 
 ## 知识地图
 
-```mermaid
-flowchart TD
-    A[磁场 B / H 与测量] --> B[磁各向异性]
-    B --> C[技术磁化与动态磁化]
-    C --> D[软磁材料]
-    C --> E[永磁材料与退磁]
-    D --> F[电机磁场与损耗]
-    E --> G[编码器磁体]
-    G --> H[Hall / AMR / GMR / TMR]
-    H --> I[机械角、电角度与输出角]
-    I --> J[误差预算与校准]
-    F --> I
-```
+<figure class="kb-figure">
+  <img src="../assets/diagrams/subject-map.svg" alt="从磁场与测量、磁性材料、角度检测到机械角和误差预算的学科知识地图" loading="lazy">
+  <figcaption>从磁学到编码器系统误差的知识地图</figcaption>
+</figure>
 
 ## 文章顺序
 

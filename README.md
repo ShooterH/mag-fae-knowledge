@@ -68,7 +68,7 @@ GITHUB_REPO_URL=https://github.com/<你的用户名>/mag-fae-knowledge mkdocs se
 │   ├── cases/                   # 脱敏案例
 │   ├── sources/                 # 可追溯来源登记
 │   ├── authoring/               # 文章/案例/来源模板
-│   └── assets/                  # 样式、脚本、标志
+│   └── assets/                  # 样式、脚本、标志、静态图表
 └── .github/workflows/deploy.yml # Pages 自动部署
 ```
 

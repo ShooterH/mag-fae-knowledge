@@ -50,23 +50,10 @@ sources:
 
 ## 分层排查图
 
-```mermaid
-flowchart TD
-    A[现象] --> B[电源/时钟/接口]
-    B -->|正常| C[原始磁场与诊断]
-    B -->|异常| B1[供电/地/线束/协议]
-    C -->|正常| D[机械与磁体]
-    C -->|异常| C1[气隙/饱和/杂散场/磁体]
-    D -->|正常| E[固件/校准/算法]
-    D -->|异常| D1[偏心/倾斜/松动/跳动]
-    E -->|正常| F[环境/EMC/温升]
-    E -->|异常| E1[零点/方向/极对数/滤波]
-    F --> G[复现与最坏工况验证]
-    B1 --> G
-    C1 --> G
-    D1 --> G
-    E1 --> G
-```
+<figure class="kb-figure">
+  <img src="../assets/diagrams/troubleshooting-tree.svg" alt="从电源接口、原始磁场、机械磁体、固件校准到环境干扰的磁编码器分层排查图" loading="lazy">
+  <figcaption>先分层、再定位的现场排障路径</figcaption>
+</figure>
 
 ## 第一层：电源、时钟与接口
 
