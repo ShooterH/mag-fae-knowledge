@@ -1,4 +1,5 @@
 site_name: 磁编码器 FAE 知识库
+site_url: https://shooterh.github.io/mag-fae-knowledge/
 site_description: 面向磁编码器现场支持、选型与磁路仿真的可追溯工程知识库
 site_author: FAE Knowledge Base
 docs_dir: docs
