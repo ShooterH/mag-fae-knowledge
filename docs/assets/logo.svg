@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="磁编码器知识库标志">
+  <defs>
+    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#536dfe"/>
+      <stop offset="1" stop-color="#00bcd4"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="17" fill="url(#g)"/>
+  <path d="M20 16v20.5c0 7.2 5.4 12.5 12 12.5s12-5.3 12-12.5V16h-7v20.5c0 3.2-2.2 5.5-5 5.5s-5-2.3-5-5.5V16h-7Z" fill="#fff"/>
+  <rect x="20" y="16" width="7" height="8" rx="1" fill="#b2ebf2"/>
+  <rect x="37" y="16" width="7" height="8" rx="1" fill="#b2ebf2"/>
+</svg>

@@ -1,0 +1,95 @@
+site_name: 磁编码器 FAE 知识库
+site_description: 面向磁编码器现场支持、选型与磁路仿真的可追溯工程知识库
+site_author: FAE Knowledge Base
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - awesome-pages
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-source
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+
+extra_css:
+  - assets/vendor/katex/katex.min.css
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/vendor/katex/katex.min.js
+  - assets/vendor/katex/contrib/auto-render.min.js
+  - assets/javascripts/site.js
+
+extra:
+  generator: false
+
+copyright: >
+  内容仅供工程学习与设计参考；具体项目须以目标器件现行数据手册、标准原文和实测为准。
+
+# 部署到 GitHub Actions 时自动使用当前仓库；本地未配置时显示占位地址。
+repo_url: !ENV [GITHUB_REPO_URL, "https://github.com/YOUR_GITHUB_USERNAME/mag-fae-knowledge"]
+edit_uri: edit/main/docs/

@@ -1,0 +1,8 @@
+nav:
+  - 首页: index.md
+  - 工作任务: fae
+  - 学科体系: subjects
+  - 案例库: cases
+  - 来源库: sources
+  - 增改模板: authoring
+  - 关于本库: about.md
