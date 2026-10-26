@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1000" width="560" role="img" aria-labelledby="b03-title b03-desc" height="1000">
+  <title id="b03-title">反磁化与矫顽力的三种机制示意</title>
+  <desc id="b03-desc">三幅纵向排列的示意图：畴壁被缺陷和应力起伏钉扎、反磁化核在晶界或杂质处形核并长大、单畴磁矩在外场下转动。示意图，不是实测显微图。</desc>
+  <defs>
+    <marker id="b03-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4f6f"/>
+    </marker>
+    <marker id="b03-arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a3542c"/>
+    </marker>
+  </defs>
+
+  <style>
+    .b03-text { font-family: "Microsoft YaHei", "Noto Sans SC", "PingFang SC", sans-serif; fill: #22303f; }
+    .b03-title { font-size: 21px; font-weight: 700; }
+    .b03-panel-title { font-size: 19px; font-weight: 700; }
+    .b03-label { font-size: 17px; font-weight: 600; }
+    .b03-small { font-size: 16px; fill: #4d5d6b; }
+    .b03-note { font-size: 15px; fill: #5a6875; }
+    .b03-box { fill: #f5f8fb; stroke: #b8cddd; stroke-width: 1.2; }
+    .b03-domain { fill: #e6f0f7; stroke: #6f95b1; stroke-width: 1.2; }
+    .b03-wall { stroke: #b87324; stroke-width: 4; fill: none; }
+    .b03-defect { fill: #d9a45b; stroke: #8a5415; stroke-width: 1.2; }
+    .b03-easy { stroke: #526b7d; stroke-width: 1.4; stroke-dasharray: 5 4; fill: none; }
+  </style>
+
+  <text class="b03-text b03-title" x="20" y="36">反磁化与矫顽力的三种机制（示意，非实测）</text>
+
+  <!-- panel 1 -->
+  <rect class="b03-box" x="20" y="60" width="520" height="280" rx="10"/>
+  <text class="b03-text b03-panel-title" x="34" y="90">① 畴壁被钉扎</text>
+  <rect class="b03-domain" x="70" y="110" width="180" height="180" rx="3"/>
+  <rect class="b03-domain" x="270" y="110" width="180" height="180" rx="3"/>
+  <path class="b03-wall" d="M 260 110 C 254 145 266 175 256 205 C 248 235 266 260 256 290"/>
+  <circle class="b03-defect" cx="259" cy="160" r="8"/>
+  <circle class="b03-defect" cx="260" cy="220" r="10"/>
+  <circle class="b03-defect" cx="257" cy="272" r="7"/>
+  <path d="M 100 145 L 100 255" stroke="#2f4f6f" stroke-width="2.2" marker-end="url(#b03-arrow)"/>
+  <path d="M 420 255 L 420 145" stroke="#2f4f6f" stroke-width="2.2" marker-end="url(#b03-arrow)"/>
+  <path d="M 70 315 L 130 315" stroke="#b87324" stroke-width="2" marker-end="url(#b03-arrow-red)"/>
+  <text class="b03-text b03-label" x="138" y="321">H</text>
+  <text class="b03-text b03-small" x="70" y="334">缺陷/应力起伏 → 壁移受阻</text>
+
+  <!-- panel 2 -->
+  <rect class="b03-box" x="20" y="360" width="520" height="280" rx="10"/>
+  <text class="b03-text b03-panel-title" x="34" y="390">② 反磁化核形核、长大</text>
+  <rect class="b03-domain" x="70" y="410" width="180" height="180" rx="3"/>
+  <rect class="b03-domain" x="270" y="410" width="180" height="180" rx="3"/>
+  <line x1="260" y1="410" x2="260" y2="590" stroke="#6f95b1" stroke-width="2.4"/>
+  <ellipse cx="260" cy="500" rx="24" ry="38" fill="#f0c9a2" stroke="#a3542c" stroke-width="1.6"/>
+  <path d="M 250 485 L 250 515" stroke="#a3542c" stroke-width="2" marker-end="url(#b03-arrow-red)"/>
+  <path d="M 270 515 L 270 485" stroke="#a3542c" stroke-width="2" marker-end="url(#b03-arrow-red)"/>
+  <path d="M 100 445 L 100 555" stroke="#2f4f6f" stroke-width="2.2" marker-end="url(#b03-arrow)"/>
+  <path d="M 420 555 L 420 445" stroke="#2f4f6f" stroke-width="2.2" marker-end="url(#b03-arrow)"/>
+  <path d="M 284 500 L 320 500" stroke="#a3542c" stroke-width="1.8" marker-end="url(#b03-arrow-red)"/>
+  <text class="b03-text b03-label" x="292" y="490">长大</text>
+  <text class="b03-text b03-small" x="70" y="634">晶界/杂质处形核 → 长成反磁化畴</text>
+
+  <!-- panel 3 -->
+  <rect class="b03-box" x="20" y="660" width="520" height="280" rx="10"/>
+  <text class="b03-text b03-panel-title" x="34" y="690">③ 单畴磁矩转动</text>
+  <circle cx="280" cy="780" r="75" fill="#e6f0f7" stroke="#6f95b1" stroke-width="1.6"/>
+  <line class="b03-easy" x1="220" y1="840" x2="340" y2="720"/>
+  <path d="M 280 780 L 335 725" stroke="#2f4f6f" stroke-width="2.4" marker-end="url(#b03-arrow)"/>
+  <path d="M 280 780 L 370 780" stroke="#b87324" stroke-width="2.2" marker-end="url(#b03-arrow-red)"/>
+  <path d="M 310 780 A 30 30 0 0 0 303 758" stroke="#40566b" stroke-width="1.4" fill="none"/>
+  <text class="b03-text b03-label" x="348" y="712">易轴</text>
+  <text class="b03-text b03-label" x="344" y="744">Ms</text>
+  <text class="b03-text b03-label" x="316" y="766">θ</text>
+  <text class="b03-text b03-label" x="380" y="786">H</text>
+  <text class="b03-text b03-small" x="70" y="934">无畴壁可移 → 磁矩整体转动</text>
+
+  <text class="b03-text b03-note" x="20" y="976">注：三种机制可共存；宏观 Hc 不是单一微观机制的“指纹”。</text>
+</svg>

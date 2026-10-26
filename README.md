@@ -64,7 +64,9 @@ GITHUB_REPO_URL=https://github.com/<你的用户名>/mag-fae-knowledge mkdocs se
 ├── docs/
 │   ├── index.md                 # 首页：任务/学科双入口
 │   ├── fae/                     # 选型、误差预算、仿真、排障
-│   ├── subjects/                # 磁学、材料、传感、电机
+│   ├── subjects/                # 22 篇学科文章：磁学、材料、传感、系统
+│   │   ├── learning-paths.md    # 三条学习路线
+│   │   └── glossary.md          # 术语与符号
 │   ├── cases/                   # 脱敏案例
 │   ├── sources/                 # 可追溯来源登记
 │   ├── authoring/               # 文章/案例/来源模板

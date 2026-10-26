@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520"> role="img" aria-labelledby="a01title a01desc">
+  <title id="a01title">磁体、气隙与传感器中的 B、H、M 示意</title>
+  <desc id="a01desc">左图为永磁体、气隙和 Hall 芯片三区域，标出磁化强度 M、退磁场 Hd 和磁通密度 B；右图为 T 与 G、mT 与 G、A/m 与 Oe 的单位换算阶梯。</desc>
+  <defs>
+    <marker id="a01-blue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3f51b5"/>
+    </marker>
+    <marker id="a01-orange" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ef6c00"/>
+    </marker>
+    <marker id="a01-gray" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#607d8b"/>
+    </marker>
+  </defs>
+
+  <text x="30" y="30" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" font-weight="700" fill="#263238">(a) 磁体—气隙—芯片：三个区域，三种角色</text>
+
+  <rect x="60" y="120" width="160" height="240" rx="8" fill="#e8eefc" stroke="#3f51b5" stroke-width="2"/>
+  <text x="140" y="105" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" fill="#1a237e">永磁体</text>
+
+  <line x1="90" y1="320" x2="90" y2="175" stroke="#3f51b5" stroke-width="3" marker-end="url(#a01-blue)"/>
+  <line x1="130" y1="320" x2="130" y2="175" stroke="#3f51b5" stroke-width="3" marker-end="url(#a01-blue)"/>
+  <line x1="170" y1="320" x2="170" y2="175" stroke="#3f51b5" stroke-width="3" marker-end="url(#a01-blue)"/>
+  <text x="185" y="205" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#1a237e">M</text>
+
+  <line x1="110" y1="180" x2="110" y2="315" stroke="#ef6c00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a01-orange)"/>
+  <line x1="150" y1="180" x2="150" y2="315" stroke="#ef6c00" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a01-orange)"/>
+  <text x="46" y="372" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#bf360c">H<tspan baseline-shift="sub" font-size="0.72em">d</tspan> 与 M 反向</text>
+
+  <rect x="220" y="120" width="110" height="240" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="275" y="105" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="15" fill="#8d6e00">气隙</text>
+
+  <line x1="228" y1="180" x2="322" y2="180" stroke="#3f51b5" stroke-width="3" marker-end="url(#a01-blue)"/>
+  <line x1="228" y1="240" x2="322" y2="240" stroke="#3f51b5" stroke-width="3" marker-end="url(#a01-blue)"/>
+  <line x1="228" y1="300" x2="322" y2="300" stroke="#3f51b5" stroke-width="3" marker-end="url(#a01-blue)"/>
+  <text x="275" y="165" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#1a237e">B</text>
+
+  <rect x="340" y="200" width="80" height="80" rx="6" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="380" y="190" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#1b5e20">Hall 芯片</text>
+  <text x="380" y="300" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#1b5e20">测 B 分量</text>
+
+  <text x="60" y="405" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#455a64">磁体内部：M 是材料响应，H<tspan baseline-shift="sub" font-size="0.72em">d</tspan> 是自由磁极产生的反向场。</text>
+  <text x="60" y="430" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#455a64">气隙与芯片处：通常用 B 描述空间场；B 不等于材料 Br。</text>
+  <text x="60" y="455" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#455a64">示意，非比例；箭头只表示方向，不代表各点数值相同。</text>
+
+  <line x1="605" y1="40" x2="605" y2="480" stroke="#cfd8dc" stroke-width="1.5"/>
+
+  <text x="735" y="65" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="700" fill="#263238">(b) 单位换算阶梯</text>
+
+  <rect x="635" y="95" width="200" height="58" rx="8" fill="#e3f2fd" stroke="#64b5f6"/>
+  <text x="735" y="118" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#0d47a1">磁通密度 B</text>
+  <text x="735" y="140" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#0d47a1">1 T = 10⁴ G</text>
+
+  <rect x="635" y="175" width="200" height="58" rx="8" fill="#e3f2fd" stroke="#64b5f6"/>
+  <text x="735" y="198" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#0d47a1">常用小单位</text>
+  <text x="735" y="220" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#0d47a1">1 mT = 10 G</text>
+
+  <rect x="635" y="255" width="200" height="58" rx="8" fill="#fff3e0" stroke="#ffb74d"/>
+  <text x="735" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#e65100">磁场强度 H</text>
+  <text x="735" y="300" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#e65100">1 Oe ≈ 79.58 A/m</text>
+
+  <rect x="635" y="335" width="200" height="58" rx="8" fill="#fff3e0" stroke="#ffb74d"/>
+  <text x="735" y="358" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#e65100">工程常用</text>
+  <text x="735" y="380" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="14" fill="#e65100">1 kA/m ≈ 12.57 Oe</text>
+
+  <line x1="735" y1="155" x2="735" y2="173" stroke="#607d8b" stroke-width="2" marker-end="url(#a01-gray)"/>
+  <line x1="735" y1="235" x2="735" y2="253" stroke="#607d8b" stroke-width="2" marker-end="url(#a01-gray)"/>
+  <line x1="735" y1="315" x2="735" y2="333" stroke="#607d8b" stroke-width="2" marker-end="url(#a01-gray)"/>
+
+  <text x="735" y="430" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#455a64">先确认单位，再比较数值。</text>
+  <text x="735" y="452" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="13" fill="#455a64">CGS 与 SI 公式不能混算。</text>
+</svg>

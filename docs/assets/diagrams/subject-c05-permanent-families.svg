@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="880" role="img" aria-labelledby="c05Title c05Desc" height="560">
+  <title id="c05Title">永磁材料家族：金属永磁、铁氧体永磁与稀土永磁</title>
+  <desc id="c05Desc">按家族、系列和牌号层级展示 AlNiCo、FeCrCo、Ba/Sr 铁氧体、SmCo 与 NdFeB 的结构关系，并给出温度稳定性、耐腐蚀、成本与磁能积的定性定位。图为结构示意，不是性能排名。</desc>
+  <style>
+    .bg{fill:#ffffff}
+    .root{fill:#e8f1f8;stroke:#6d93b2;stroke-width:1.5}
+    .metal{fill:#eef5fb;stroke:#9bb9d1;stroke-width:1.2}
+    .ferr{fill:#eef7f1;stroke:#9ec4ad;stroke-width:1.2}
+    .rare{fill:#f7f1e9;stroke:#c9b08d;stroke-width:1.2}
+    .item{fill:#ffffff;stroke:#c7d6e3;stroke-width:1}
+    .lbl{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:14px;fill:#26323d}
+    .small{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:12.5px;fill:#55636f}
+    .tiny{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:11.5px;fill:#6b7885}
+    .title{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:17px;font-weight:600;fill:#1f3344}
+    .arrow{stroke:#7b8fa3;stroke-width:1.4;fill:none}
+    .note{fill:#fbf6ea;stroke:#d8bd84;stroke-width:1}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="880" height="560"/>
+  <text class="title" x="40" y="34">永磁材料家族：先看层级，再谈牌号</text>
+
+  <rect class="root" x="318" y="52" width="244" height="40" rx="7"/>
+  <text class="lbl" x="440" y="78" text-anchor="middle" font-weight="600">永磁材料</text>
+  <path class="arrow" d="M390,92 L200,124"/>
+  <path class="arrow" d="M440,92 L440,124"/>
+  <path class="arrow" d="M490,92 L680,124"/>
+
+  <!-- Metal -->
+  <rect class="metal" x="40" y="126" width="240" height="282" rx="8"/>
+  <text class="lbl" x="160" y="152" text-anchor="middle" font-weight="600">金属永磁</text>
+  <rect class="item" x="56" y="168" width="208" height="56" rx="4"/>
+  <text class="small" x="160" y="190" text-anchor="middle">AlNiCo</text>
+  <text class="tiny" x="160" y="210" text-anchor="middle">α₁(FeCo) 强磁 + α₂(NiAl) 弱磁</text>
+  <rect class="item" x="56" y="236" width="208" height="56" rx="4"/>
+  <text class="small" x="160" y="258" text-anchor="middle">FeCrCo 等</text>
+  <text class="tiny" x="160" y="278" text-anchor="middle">可加工、温度稳定性较好</text>
+  <rect class="item" x="56" y="304" width="208" height="56" rx="4"/>
+  <text class="small" x="160" y="326" text-anchor="middle">其他金属永磁</text>
+  <text class="tiny" x="160" y="346" text-anchor="middle">FePt、MnAl 等研究与专用体系</text>
+  <text class="tiny" x="56" y="384">共同点：温度稳定、HcJ 往往较低</text>
+
+  <!-- Ferrite -->
+  <rect class="ferr" x="320" y="126" width="240" height="282" rx="8"/>
+  <text class="lbl" x="440" y="152" text-anchor="middle" font-weight="600">铁氧体永磁</text>
+  <rect class="item" x="336" y="168" width="208" height="56" rx="4"/>
+  <text class="small" x="440" y="190" text-anchor="middle">烧结 BaM / SrM</text>
+  <text class="tiny" x="440" y="210" text-anchor="middle">M 型六角，磁晶各向异性强</text>
+  <rect class="item" x="336" y="236" width="208" height="56" rx="4"/>
+  <text class="small" x="440" y="258" text-anchor="middle">粘结铁氧体</text>
+  <text class="tiny" x="440" y="278" text-anchor="middle">形状自由，磁性能低于烧结</text>
+  <rect class="item" x="336" y="304" width="208" height="56" rx="4"/>
+  <text class="small" x="440" y="326" text-anchor="middle">典型定位</text>
+  <text class="tiny" x="440" y="346" text-anchor="middle">低成本、耐腐蚀、Br 较低</text>
+  <text class="tiny" x="336" y="384">注意：低温与反向场仍需校核</text>
+
+  <!-- Rare earth -->
+  <rect class="rare" x="600" y="126" width="240" height="282" rx="8"/>
+  <text class="lbl" x="720" y="152" text-anchor="middle" font-weight="600">稀土永磁</text>
+  <rect class="item" x="616" y="168" width="208" height="64" rx="4"/>
+  <text class="small" x="720" y="190" text-anchor="middle">SmCo₅ / Sm₂Co₁₇</text>
+  <text class="tiny" x="720" y="212" text-anchor="middle">高温与耐腐蚀定位，成本高</text>
+  <rect class="item" x="616" y="244" width="208" height="56" rx="4"/>
+  <text class="small" x="720" y="266" text-anchor="middle">烧结 NdFeB</text>
+  <text class="tiny" x="720" y="286" text-anchor="middle">Nd₂Fe₁₄B 主相 + 富 Nd / 富 B 晶界</text>
+  <rect class="item" x="616" y="312" width="208" height="56" rx="4"/>
+  <text class="small" x="720" y="334" text-anchor="middle">粘结 NdFeB</text>
+  <text class="tiny" x="720" y="354" text-anchor="middle">复杂形状，性能与耐温受粘结剂限制</text>
+  <text class="tiny" x="616" y="392">共同点：高能积、温度/腐蚀管理</text>
+
+  <!-- positioning cards -->
+  <rect class="note" x="40" y="430" width="240" height="58" rx="6"/>
+  <text class="small" x="160" y="454" text-anchor="middle">温度稳定、耐冲击</text>
+  <text class="tiny" x="160" y="474" text-anchor="middle">但反向场下容易退磁</text>
+
+  <rect class="note" x="320" y="430" width="240" height="58" rx="6"/>
+  <text class="small" x="440" y="454" text-anchor="middle">成本与耐腐蚀优先</text>
+  <text class="tiny" x="440" y="474" text-anchor="middle">磁能积低，适合体积不敏感场景</text>
+
+  <rect class="note" x="600" y="430" width="240" height="58" rx="6"/>
+  <text class="small" x="720" y="454" text-anchor="middle">高能积、小型化</text>
+  <text class="tiny" x="720" y="474" text-anchor="middle">按牌号、温度、负载线校核</text>
+
+  <text class="small" x="40" y="520">层级：家族（金属/铁氧体/稀土）→ 系列（如 Sm₂Co₁₇、NdFeB）→ 牌号（具体供应商与工艺）。</text>
+  <text class="tiny" x="40" y="544">示意，非按比例；图中是定性定位，不是跨厂牌性能排名。具体数值与温度限值必须以数据表和实测为准。</text>
+</svg>

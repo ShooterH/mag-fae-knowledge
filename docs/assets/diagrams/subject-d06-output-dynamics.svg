@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" role="img" aria-labelledby="t d" width="1000" height="820">
+<title id="t">分辨率、采样、带宽与输出</title><desc id="d">分辨率量化台阶、噪声与误差的量级对比、采样与滤波延迟时间轴，以及 359.9 度到 0.1 度的角度回绕示例。</desc>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+  <marker id="arB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d4ed8"/></marker>
+  <marker id="arR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b45309"/></marker>
+</defs>
+<rect width="1000" height="820" fill="#ffffff"/>
+<g font-family="font-family:'Noto Sans SC','Microsoft YaHei',Arial,sans-serif" font-size="13" fill="#1f2937">
+<text x="30" y="32" font-size="19" text-anchor="start" font-weight="bold" fill="#1f2937">分辨率、采样、带宽与输出：四个容易混在一起的量</text>
+<text x="30" y="55" font-size="12" text-anchor="start" font-weight="normal" fill="#475569">数值为示例或数据手册条件；具体接口、时序和带宽必须看目标器件（示意，非比例）</text>
+<rect x="30" y="75" width="460" height="225" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="50" y="102" font-size="13" text-anchor="start" font-weight="bold" fill="#1e3a8a">分辨率：量化台阶</text>
+<line x1="60" y1="270" x2="300" y2="270" stroke="#334155" stroke-width="1.2" marker-end="url(#ar)"/>
+<line x1="60" y1="270" x2="60" y2="120" stroke="#334155" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="306" y="274" font-size="10" text-anchor="start" font-weight="normal" fill="#475569">θ</text>
+<text x="54" y="114" font-size="10" text-anchor="start" font-weight="normal" fill="#475569">输出</text>
+<polyline points="60.0,251.0 84.0,251.0 84.0,237.0 84.0,237.0 108.0,237.0 108.0,223.0 108.0,223.0 132.0,223.0 132.0,209.0 132.0,209.0 156.0,209.0 156.0,195.0 156.0,195.0 180.0,195.0 180.0,181.0 180.0,181.0 204.0,181.0 204.0,167.0 204.0,167.0 228.0,167.0 228.0,153.0 228.0,153.0 252.0,153.0 252.0,139.0 252.0,139.0 276.0,139.0 276.0,125.0 276.0,125.0 300.0,125.0" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="50" y="292" font-size="10" text-anchor="start" font-weight="normal" fill="#475569">Δθ = 360° / 2^N，只是输出最小步进</text>
+<text x="320" y="132" font-size="11" text-anchor="start" font-weight="normal" fill="#334155">10 bit：0.3516°</text>
+<text x="320" y="156" font-size="11" text-anchor="start" font-weight="normal" fill="#334155">12 bit：0.0879°</text>
+<text x="320" y="180" font-size="11" text-anchor="start" font-weight="normal" fill="#334155">14 bit：0.0220°</text>
+<text x="320" y="204" font-size="11" text-anchor="start" font-weight="normal" fill="#334155">16 bit：0.0055°</text>
+<text x="320" y="238" font-size="10" text-anchor="start" font-weight="normal" fill="#475569">位数增加只缩小台阶，</text>
+<text x="320" y="256" font-size="10" text-anchor="start" font-weight="normal" fill="#475569">不自动降低噪声、INL 或温漂。</text>
+<rect x="510" y="75" width="460" height="225" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="530" y="102" font-size="13" text-anchor="start" font-weight="bold" fill="#1e3a8a">同一量级：四个不同的指标</text>
+<text x="530" y="134" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">量化台阶 LSB</text>
+<rect x="650" y="125" width="24.612000000000002" height="10" rx="3" fill="#1d4ed8" opacity="0.75"/>
+<text x="679.612" y="134" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">0.0879°</text>
+<text x="530" y="164" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">AS5600 噪声（慢滤波）</text>
+<rect x="650" y="155" width="4.2" height="10" rx="3" fill="#047857" opacity="0.75"/>
+<text x="659.2" y="164" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">0.015°</text>
+<text x="530" y="194" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">AS5600 噪声（快滤波）</text>
+<rect x="650" y="185" width="12.04" height="10" rx="3" fill="#047857" opacity="0.75"/>
+<text x="667.04" y="194" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">0.043°</text>
+<text x="530" y="224" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">AS5600 INL（最大）</text>
+<rect x="650" y="215" width="280.0" height="10" rx="3" fill="#b45309" opacity="0.75"/>
+<text x="935.0" y="224" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">1°</text>
+<text x="530" y="254" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">TLE5501 角度误差（条件见正文）</text>
+<rect x="650" y="245" width="224.0" height="10" rx="3" fill="#7c3aed" opacity="0.75"/>
+<text x="879.0" y="254" font-size="9" text-anchor="start" font-weight="normal" fill="#334155">0.8°</text>
+<text x="530" y="292" font-size="9" text-anchor="start" font-weight="normal" fill="#475569">分辨率、噪声、INL、总误差不能互相替代；比较时必须带条件。</text>
+<rect x="30" y="325" width="940" height="225" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="50" y="352" font-size="13" text-anchor="start" font-weight="bold" fill="#1e3a8a">采样、滤波与延迟：时间轴</text>
+<line x1="70" y1="510" x2="940" y2="510" stroke="#334155" stroke-width="1.2" marker-end="url(#ar)"/>
+<text x="935" y="546" font-size="10" text-anchor="end" font-weight="normal" fill="#475569">时间</text>
+<line x1="70.0" y1="510" x2="70.0" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="70.0" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">0 ms</text>
+<line x1="178.75" y1="510" x2="178.75" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="178.75" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">1 ms</text>
+<line x1="287.5" y1="510" x2="287.5" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="287.5" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">2 ms</text>
+<line x1="396.25" y1="510" x2="396.25" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="396.25" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">3 ms</text>
+<line x1="505.0" y1="510" x2="505.0" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="505.0" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">4 ms</text>
+<line x1="613.75" y1="510" x2="613.75" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="613.75" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">5 ms</text>
+<line x1="722.5" y1="510" x2="722.5" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="722.5" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">6 ms</text>
+<line x1="831.25" y1="510" x2="831.25" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="831.25" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">7 ms</text>
+<line x1="940.0" y1="510" x2="940.0" y2="516" stroke="#334155" stroke-width="1"/>
+<text x="940.0" y="530" font-size="9" text-anchor="middle" font-weight="normal" fill="#475569">8 ms</text>
+<line x1="70.0" y1="502" x2="70.0" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="178.75" y1="502" x2="178.75" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="287.5" y1="502" x2="287.5" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="396.25" y1="502" x2="396.25" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="505.0" y1="502" x2="505.0" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="613.75" y1="502" x2="613.75" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="722.5" y1="502" x2="722.5" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<line x1="831.25" y1="502" x2="831.25" y2="486" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="80" y="478" font-size="9" text-anchor="start" font-weight="normal" fill="#1d4ed8">采样时刻；Ts = 1 ms（示例）</text>
+<line x1="70" y1="455" x2="287.5" y2="455" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="287.5" y1="455" x2="287.5" y2="405" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="287.5" y1="405" x2="940" y2="405" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="5 3"/>
+<text x="78" y="400" font-size="9" text-anchor="start" font-weight="normal" fill="#475569">输入阶跃（示意）</text>
+<polyline points="70.0,455.0 78.7,455.0 87.4,455.0 96.1,455.0 104.8,455.0 113.5,455.0 122.2,455.0 130.9,455.0 139.6,455.0 148.3,455.0 157.0,455.0 165.7,455.0 174.4,455.0 183.1,455.0 191.8,455.0 200.5,455.0 209.2,455.0 217.9,455.0 226.6,455.0 235.3,455.0 244.0,455.0 252.7,455.0 261.4,455.0 270.1,455.0 278.8,455.0 287.5,455.0 296.2,451.2 304.9,447.6 313.6,444.3 322.3,441.3 331.0,438.5 339.7,435.9 348.4,433.6 357.1,431.4 365.8,429.3 374.5,427.5 383.2,425.7 391.9,424.1 400.6,422.7 409.3,421.3 418.0,420.1 426.7,418.9 435.4,417.8 444.1,416.8 452.8,415.9 461.5,415.1 470.2,414.3 478.9,413.6 487.6,412.9 496.3,412.3 505.0,411.8 513.7,411.2 522.4,410.8 531.1,410.3 539.8,409.9 548.5,409.5 557.2,409.2 565.9,408.9 574.6,408.6 583.3,408.3 592.0,408.0 600.7,407.8 609.4,407.6 618.1,407.4 626.8,407.2 635.5,407.0 644.2,406.9 652.9,406.7 661.6,406.6 670.3,406.5 679.0,406.4 687.7,406.3 696.4,406.2 705.1,406.1 713.8,406.0 722.5,405.9 731.2,405.8 739.9,405.8 748.6,405.7 757.3,405.7 766.0,405.6 774.7,405.6 783.4,405.5 792.1,405.5 800.8,405.4 809.5,405.4 818.2,405.4 826.9,405.4 835.6,405.3 844.3,405.3 853.0,405.3 861.7,405.3 870.4,405.2 879.1,405.2 887.8,405.2 896.5,405.2 905.2,405.2 913.9,405.2 922.6,405.1 931.3,405.1 940.0,405.1" fill="none" stroke="#b45309" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="396.25" y1="405" x2="396.25" y2="455" stroke="#b45309" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="402.25" y="440" font-size="10" text-anchor="start" font-weight="bold" fill="#b45309">t<tspan baseline-shift="sub" font-size="0.72em">d</tspan> ≈ 1 ms</text>
+<rect x="30" y="570" width="940" height="225" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="50" y="597" font-size="13" text-anchor="start" font-weight="bold" fill="#1e3a8a">角度回绕：359.9° → 0.1° 不是 -359.8°</text>
+<line x1="80" y1="680" x2="920" y2="680" stroke="#334155" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="80" y="702" font-size="11" text-anchor="middle" font-weight="normal" fill="#334155">0°</text>
+<text x="920" y="702" font-size="11" text-anchor="middle" font-weight="normal" fill="#334155">360°</text>
+<text x="500.0" y="702" font-size="10" text-anchor="middle" font-weight="normal" fill="#475569">角度</text>
+<circle cx="84" cy="680" r="4" fill="#b45309" stroke="#b45309" stroke-width="1.2"/>
+<circle cx="916" cy="680" r="4" fill="#b45309" stroke="#b45309" stroke-width="1.2"/>
+<text x="860" y="662" font-size="10" text-anchor="middle" font-weight="normal" fill="#b45309">359.9°</text>
+<text x="135" y="662" font-size="10" text-anchor="middle" font-weight="normal" fill="#b45309">0.1°</text>
+<line x1="840" y1="642" x2="160" y2="642" stroke="#047857" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="500.0" y="634" font-size="10" text-anchor="middle" font-weight="bold" fill="#047857">正向跨零：+0.2°</text>
+<line x1="160" y1="608" x2="840" y2="608" stroke="#b91c1c" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+<text x="500.0" y="600" font-size="10" text-anchor="middle" font-weight="bold" fill="#b91c1c">反向跨零：-0.2°</text>
+<rect x="80" y="720" width="840" height="58" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+<text x="95" y="744" font-size="12" text-anchor="start" font-weight="normal" fill="#1e3a8a">展开：Δ = (θ_new − θ_old + 180°) mod 360° − 180°</text>
+<text x="95" y="766" font-size="10" text-anchor="start" font-weight="normal" fill="#475569">例：359.9°→0.1° 得 +0.2°；0.1°→359.9° 得 -0.2°。多圈位置还需额外的圈数计数。</text>
+</g></svg>

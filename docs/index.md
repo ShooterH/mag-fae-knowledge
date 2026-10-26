@@ -11,7 +11,7 @@
 [建立知识体系](subjects/index.md){ .md-button }
 [查看来源规范](sources/index.md){ .md-button }
 
-<span class="kb-meta">首版 v0.1 · 2026-10-25 · 11 篇核心文章 · 24 条公开资料 + 1 本教材</span>
+<span class="kb-meta">首版 v0.2 · 2026-10-26 · 22 篇学科文章 · 30 条公开资料 + 1 本教材</span>
 </div>
 
 ## 从今天要解决的问题进入
@@ -59,9 +59,9 @@
 
 ### 磁学与磁性材料
 
-从 B/H 与测量开始，理解各向异性、磁化、损耗、软磁与永磁，再落到磁体选型和退磁边界。
+从 B/H/M/J 与磁通开始，依次建立磁性起源、磁畴、各向异性、磁路和退磁场，再进入磁滞曲线、损耗与软磁、永磁材料。
 
-[磁场与测量](subjects/field-and-measurement.md) · [磁化与损耗](subjects/magnetization-and-loss.md) · [永磁材料](subjects/permanent-magnets.md)
+[磁场与材料响应](subjects/field-and-measurement.md) · [技术磁化与磁滞](subjects/magnetization-and-hysteresis.md) · [永磁参数与工作点](subjects/permanent-magnet-parameters.md)
 </div>
 
 <div class="kb-card" markdown>
@@ -69,9 +69,9 @@
 
 ### 角度检测与编码器
 
-比较 Hall、AMR、GMR、TMR 的敏感方向与周期，建立机械角、电角度和输出角之间的正确关系。
+从 AMR/GMR/TMR 机理到 Hall 信号链，再讨论磁体安装、角度误差、机械角与电角度、输出与动态指标。
 
-[角度检测原理](subjects/angle-sensing.md) · [电机与机械角](subjects/motor-angle.md) · [误差预算](fae/error-budget.md)
+[磁电阻效应](subjects/magnetoresistance.md) · [磁场到角度](subjects/angle-sensing.md) · [角度误差机理](subjects/angle-error-mechanisms.md)
 </div>
 
 </div>
@@ -83,22 +83,24 @@
 <div class="kb-step" markdown>
 <span>STEP 1</span>
 
-**先统一语言。** 读[磁场与测量](subjects/field-and-measurement.md)，分清 B、H、Br、HcB、HcJ，知道数据手册中的数值是在什么条件下得到的。
+**先统一语言。** 读[磁场与材料响应](subjects/field-and-measurement.md)与[磁性起源](subjects/magnetic-origin-and-classes.md)，分清 B、H、M、J、Br、HcB、HcJ，知道数据手册中的数值是在什么条件下得到的。
 </div>
 
 <div class="kb-step" markdown>
 <span>STEP 2</span>
 
-**再理解磁体。** 读[永磁材料](subjects/permanent-magnets.md)与[磁化及损耗](subjects/magnetization-and-loss.md)，建立“工作点 + 温度 + 反向场”的退磁判断。
+**再理解磁体和曲线。** 读[技术磁化与磁滞](subjects/magnetization-and-hysteresis.md)、[永磁参数与工作点](subjects/permanent-magnet-parameters.md)和[温度稳定性与退磁](subjects/magnet-stability-and-demagnetization.md)，建立“工作点 + 温度 + 反向场”的退磁判断。
 </div>
 
 <div class="kb-step" markdown>
 <span>STEP 3</span>
 
-**最后连接系统。** 读[角度检测原理](subjects/angle-sensing.md)和[误差预算](fae/error-budget.md)，把磁体、气隙、偏心、倾斜和算法放在同一张误差链上。
+**最后连接系统。** 读[磁场到角度](subjects/angle-sensing.md)、[编码器磁体与安装](subjects/encoder-magnet-and-mounting.md)和[误差预算](fae/error-budget.md)，把磁体、气隙、偏心、倾斜和算法放在同一张误差链上。
 </div>
 
 </div>
+
+需要按时间预算安排阅读顺序时，用[学习路径](subjects/learning-paths.md)；查符号和单位用[术语与符号](subjects/glossary.md)。
 
 ## 这个库怎样保证可信
 
@@ -114,7 +116,8 @@
 
 ## 首版覆盖
 
-- **磁学基础：** 磁场与测量、各向异性、磁化与损耗
-- **材料选择：** 软磁、铁氧体、NdFeB、退磁和温度
-- **传感系统：** Hall/AMR/GMR/TMR、机械角/电角度、误差预算
+- **磁学基础：** 磁场与材料响应、磁性起源、磁畴、各向异性、磁路、退磁场
+- **磁化与测量：** 磁滞回线、磁测量、矫顽力、损耗与温度
+- **材料选择：** 软磁参数与家族、软磁铁氧体、永磁工作点、材料家族、退磁
+- **传感系统：** AMR/GMR/TMR、角度信号链、磁体与安装、误差机理、机械角/电角度、输出与动态
 - **FAE 工作流：** 选型、仿真建议、现场排障、脱敏案例模板
