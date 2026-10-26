@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" role="img" aria-labelledby="c06Title c06Desc" height="600">
+  <title id="c06Title">温度、负载线与退磁损失：可逆、不可逆和永久损失</title>
+  <desc id="c06Desc">左图示意同一条负载线在三个温度下与退磁曲线的交点，以及高温工作点越过膝点；右图给出升温、冷却和重新充磁后区分可逆、不可逆与永久损失的判断流程。图为示意，不对应实际牌号。</desc>
+  <style>
+    .bg{fill:#ffffff}
+    .axis{stroke:#5b6b7c;stroke-width:1.5;fill:none}
+    .grid{stroke:#dfe8f0;stroke-width:1}
+    .c20{fill:none;stroke:#2f6f9f;stroke-width:2.6}
+    .c120{fill:none;stroke:#4f9a72;stroke-width:2.6}
+    .c180{fill:none;stroke:#c0504d;stroke-width:2.6}
+    .load{stroke:#d98324;stroke-width:2.2;fill:none}
+    .guide{stroke:#9aa8b5;stroke-width:1;stroke-dasharray:4 4;fill:none}
+    .lbl{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:14px;fill:#26323d}
+    .small{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:12.5px;fill:#55636f}
+    .tiny{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:11.5px;fill:#6b7885}
+    .title{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:17px;font-weight:600;fill:#1f3344}
+    .boxA{fill:#eef5fb;stroke:#9bb9d1;stroke-width:1.2}
+    .boxB{fill:#f7fafc;stroke:#b9cfe1;stroke-width:1.2}
+    .boxD{fill:#eef7f1;stroke:#7fb093;stroke-width:1.2}
+    .boxE{fill:#fbf1e4;stroke:#d9a35e;stroke-width:1.2}
+    .boxF{fill:#f8e9e8;stroke:#c98b88;stroke-width:1.2}
+    .dot{fill:#2f6f9f;stroke:#ffffff;stroke-width:1.4}
+    .dot2{fill:#4f9a72;stroke:#ffffff;stroke-width:1.4}
+    .dotx{fill:#ffffff;stroke:#c0504d;stroke-width:2}
+    .arrow{stroke:#7b8fa3;stroke-width:1.5;fill:none}
+  </style>
+
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7b8fa3"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="960" height="600"/>
+  <text class="title" x="40" y="34">温度、负载线与退磁损失：先看工作点，再谈“能不能恢复”</text>
+
+  <!-- Left plot -->
+  <text class="lbl" x="60" y="66" font-weight="600">(a) 同一条负载线，三个温度</text>
+  <line class="grid" x1="80" y1="361.4" x2="500" y2="361.4"/>
+  <line class="grid" x1="80" y1="252.9" x2="500" y2="252.9"/>
+  <line class="grid" x1="80" y1="144.3" x2="500" y2="144.3"/>
+  <line class="grid" x1="185" y1="80" x2="185" y2="470"/>
+  <line class="grid" x1="290" y1="80" x2="290" y2="470"/>
+  <line class="grid" x1="395" y1="80" x2="395" y2="470"/>
+
+  <line class="axis" x1="80" y1="470" x2="512" y2="470" marker-end="url(#ar2)"/>
+  <line class="axis" x1="80" y1="470" x2="80" y2="76" marker-end="url(#ar2)"/>
+  <text class="small" x="440" y="492">H（kA/m）</text>
+  <text class="small" x="38" y="280" transform="rotate(-90 38 280)">B（T）</text>
+
+  <g class="tiny">
+    <text x="80" y="488" text-anchor="middle">-800</text>
+    <text x="185" y="488" text-anchor="middle">-600</text>
+    <text x="290" y="488" text-anchor="middle">-400</text>
+    <text x="395" y="488" text-anchor="middle">-200</text>
+    <text x="500" y="488" text-anchor="middle">0</text>
+    <text x="72" y="474" text-anchor="end">0</text>
+    <text x="72" y="366" text-anchor="end">0.4</text>
+    <text x="72" y="257" text-anchor="end">0.8</text>
+    <text x="72" y="149" text-anchor="end">1.2</text>
+  </g>
+
+  <path class="c20" d="M500,144.3 L237.5,323.3 C180,370 125,430 80,470"/>
+  <path class="c120" d="M500,185.0 L316.25,310.3 C260,370 205,430 158.75,470"/>
+  <path class="c180" d="M500,212.1 L368.75,301.6 C310,370 270,430 237.5,470"/>
+
+  <line class="load" x1="500" y1="470" x2="270" y2="246"/>
+  <text class="tiny" x="470" y="450" fill="#8a5a24">Pc = 1.5</text>
+
+  <circle class="dot" cx="303.3" cy="278.4" r="5.5"/>
+  <circle class="dot2" cx="327.9" cy="302.4" r="5.5"/>
+  <circle class="dotx" cx="344.3" cy="318.3" r="7"/>
+  <line class="guide" x1="344.3" y1="318.3" x2="344.3" y2="470"/>
+
+  <text class="small" x="508" y="148" fill="#245c7a">20°C</text>
+  <text class="small" x="508" y="189" fill="#2f6b4c">120°C</text>
+  <text class="small" x="508" y="216" fill="#8a3b38">180°C</text>
+
+  <text class="tiny" x="60" y="520">空心红圈表示 180°C 工作点已越过膝点（示意）；实际牌号的 Br、膝点和 HcB 随温度变化，必须查供应商温度曲线族。</text>
+
+  <!-- Right flow -->
+  <text class="lbl" x="570" y="66" font-weight="600">(b) 升温—冷却—重新充磁后的判断</text>
+
+  <rect class="boxA" x="570" y="84" width="350" height="48" rx="6"/>
+  <text class="small" x="745" y="104" text-anchor="middle">升温 + 反向场 + 负载线</text>
+  <text class="tiny" x="745" y="122" text-anchor="middle">共同决定工作点，不是只看温度</text>
+
+  <path class="arrow" d="M745,132 L745,154" marker-end="url(#ar2)"/>
+  <rect class="boxB" x="570" y="158" width="350" height="48" rx="6"/>
+  <text class="small" x="745" y="178" text-anchor="middle">工作点向第二象限移动</text>
+  <text class="tiny" x="745" y="196" text-anchor="middle">是否越过膝点？</text>
+
+  <path class="arrow" d="M745,206 L745,228" marker-end="url(#ar2)"/>
+  <rect class="boxB" x="570" y="232" width="350" height="48" rx="6"/>
+  <text class="small" x="745" y="252" text-anchor="middle">冷却回室温</text>
+  <text class="tiny" x="745" y="270" text-anchor="middle">在同一测量条件、同一几何下比较 B</text>
+
+  <path class="arrow" d="M640,280 L640,330" marker-end="url(#ar2)"/>
+  <path class="arrow" d="M745,280 L745,412" marker-end="url(#ar2)"/>
+  <path class="arrow" d="M850,280 L850,498" marker-end="url(#ar2)"/>
+
+  <rect class="boxD" x="570" y="334" width="140" height="66" rx="6"/>
+  <text class="small" x="640" y="358" text-anchor="middle">回到原值</text>
+  <text class="tiny" x="640" y="380" text-anchor="middle">可逆损失</text>
+
+  <rect class="boxE" x="650" y="416" width="190" height="66" rx="6"/>
+  <text class="small" x="745" y="436" text-anchor="middle">低于原值</text>
+  <text class="tiny" x="745" y="456" text-anchor="middle">重新充磁可恢复</text>
+  <text class="tiny" x="745" y="472" text-anchor="middle">不可逆（可恢复）</text>
+
+  <rect class="boxF" x="700" y="502" width="220" height="66" rx="6"/>
+  <text class="small" x="810" y="522" text-anchor="middle">重新充磁仍低</text>
+  <text class="tiny" x="810" y="542" text-anchor="middle">永久损失：腐蚀、冶金变化</text>
+  <text class="tiny" x="810" y="558" text-anchor="middle">损伤或磁路变化</text>
+
+  <text class="tiny" x="570" y="306">磁粘滞也会贡献不可逆损失。</text>
+  <text class="tiny" x="40" y="576">示意，非按比例；可逆损失由温度系数描述，不可逆损失需用同条件前后测量或重新充磁来判断。</text>
+</svg>

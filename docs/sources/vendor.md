@@ -199,3 +199,34 @@
 - **资料：** [VM-LSDYNA-EMAG-010](https://ansyshelp.ansys.com/public/Views/Secured/corp/v251/en/lsdyna_vm/Hlp_V_VM_L_EMAG010.html)
 - **支持：** 高梯度、弱场、探头相对尺寸会放大仿真与实测相关性误差。
 - **边界：** 不是编码器静磁算例，只借鉴相关性方法。
+
+## 归档与取用状态
+
+下表说明每条资料在本地存档中的实际状态。`已下载`表示有可读副本并通过文件头或页面标题校验；`仅网页`表示官方页面本身是正文或索引；`待补`表示官网拒绝访问、仅有人机验证页或连接失败，站内不得据此补充具体数值。归档位于项目外，不在仓库内分发。
+
+| 来源 ID | 归档状态 | 说明 |
+| --- | --- | --- |
+| UNIT-01 | 已下载（官方页面） | BIPM SI Brochure 第 9 版页面；PDF 可从官网单独下载 |
+| MEAS-01 | 已下载（PDF） | Arnold 永磁测量白皮书 |
+| MAG-01 | 已下载（PDF） | Arnold 磁学基础要素 |
+| MAT-01 | 已下载（PDF） | TDK 磁芯参数定义 |
+| SOFT-01 | 已下载（官方页面） | VAC 软磁材料与冲压件页面 |
+| PM-01 | 已下载（PDF） | Arnold 稀土永磁磁化损失 |
+| PM-02 | 已下载（PDF） | Arnold 高温电机 NdFeB |
+| PM-03 | 已下载（官方页面） | Proterial 电机用磁体页面 |
+| MOTOR-01 | 已下载（官方页面） | Microchip MCAF FOC 文档 |
+| ENC-01 | 仅网页（摘要页） | PIER B 论文摘要与 DOI；全文 PDF 未归档，正文结论只使用摘要 |
+| ENC-02 | 已下载（PDF） | Infineon TLE5x09A16(D) 中文数据手册 |
+| ENC-03 | 已下载（PDF） | Infineon TLE5501 中文数据手册 |
+| ENC-04 | 已下载（PDF） | ams OSRAM AS5600 数据手册 |
+| ENC-05 | 待补 | Melexis 官网 403，未取得正文 |
+| ENC-06 | 已下载（PDF） | Allegro A1335 线性化应用笔记 |
+| ENC-07 | 待补 | 下载得到的是人机验证页，不是 PDF |
+| ENC-08 | 待补 | TDK-Micronas 官网 403；经浏览器确认的官方 PDF 地址仍拒绝直接下载 |
+| SIM-01 | 已下载（PDF） | FEMM 4.2 用户手册 |
+| SIM-02 | 已下载（官方页面） | Ansys Mechanical 静磁分析 |
+| SIM-03 | 已下载（官方页面） | Ansys Maxwell 自适应设置 |
+| SIM-04 | 已下载（官方页面） | Altair Flux 无限盒边界 |
+| SIM-05 | 待补 | COMSOL 页面连接超时，未取得正文 |
+| SIM-06 | 已下载（PDF） | COMSOL 永磁模型 |
+| SIM-07 | 已下载（官方页面） | Ansys LS-DYNA 电磁算例 |

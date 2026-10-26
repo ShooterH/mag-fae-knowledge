@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 920" width="560" role="img" aria-labelledby="b02-title b02-desc" height="920">
+  <title id="b02-title">磁测量对象与几何示意</title>
+  <desc id="b02-desc">上半部分为 Hall 探头测量磁体局部磁场的几何关系，标出磁体表面到探头敏感区的距离、探头倾斜和夹具基准；下半部分为 Hall 探头、Helmholtz 线圈、磁滞仪/VSM 分别对应的被测量和得到的参数。示意图。</desc>
+  <defs>
+    <marker id="b02-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4f6f"/>
+    </marker>
+    <marker id="b02-arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#b87324"/>
+    </marker>
+  </defs>
+
+  <style>
+    .b02-text { font-family: "Microsoft YaHei", "Noto Sans SC", "PingFang SC", sans-serif; fill: #22303f; }
+    .b02-title { font-size: 20px; font-weight: 700; }
+    .b02-panel { font-size: 19px; font-weight: 700; }
+    .b02-label { font-size: 17px; font-weight: 600; }
+    .b02-small { font-size: 16px; }
+    .b02-note { font-size: 15px; fill: #5a6875; }
+    .b02-card { fill: #f1f6fa; stroke: #b8cddd; stroke-width: 1.2; }
+    .b02-magnet { fill: #dce9f3; stroke: #4f7d9f; stroke-width: 1.7; }
+    .b02-probe { fill: #e8eef2; stroke: #526b7d; stroke-width: 1.7; }
+    .b02-active { fill: #f3c98b; stroke: #a9661d; stroke-width: 1.4; }
+    .b02-dash { stroke: #6b8fb0; stroke-width: 1.6; stroke-dasharray: 6 4; fill: none; }
+  </style>
+
+  <text class="b02-text b02-title" x="20" y="36">磁测量对象与几何（示意，非实测）</text>
+
+  <!-- panel a -->
+  <text class="b02-text b02-panel" x="20" y="68">(a) Hall 探头测的是哪一点的 B？</text>
+
+  <rect class="b02-magnet" x="50" y="100" width="150" height="180" rx="6"/>
+  <text class="b02-text b02-label" x="92" y="178">磁体</text>
+  <text class="b02-text b02-small" x="66" y="206">同一牌号，形状/充磁</text>
+  <text class="b02-text b02-small" x="66" y="228">不同，表面场就不同</text>
+
+  <rect class="b02-probe" x="320" y="150" width="120" height="80" rx="6"/>
+  <rect class="b02-active" x="326" y="180" width="22" height="20" rx="3"/>
+  <text class="b02-text b02-label" x="330" y="140">Hall 探头</text>
+  <text class="b02-text b02-small" x="356" y="196">敏感区</text>
+  <text class="b02-text b02-small" x="300" y="252">探头尖端</text>
+
+  <line x1="348" y1="190" x2="380" y2="166" stroke="#a9661d" stroke-width="1.2"/>
+  <circle cx="348" cy="190" r="2.6" fill="#a9661d"/>
+
+  <line x1="200" y1="300" x2="326" y2="300" stroke="#b87324" stroke-width="2" marker-start="url(#b02-arrow-orange)" marker-end="url(#b02-arrow-orange)"/>
+  <text class="b02-text b02-label" x="252" y="292" fill="#8a5415">d</text>
+  <text class="b02-text b02-small" x="205" y="322">表面到敏感区，不是到外壳</text>
+
+  <path class="b02-dash" d="M 320 190 L 290 140"/>
+  <path d="M 306 178 A 22 22 0 0 1 312 166" stroke="#2f4f6f" stroke-width="1.4" fill="none"/>
+  <text class="b02-text b02-small" x="210" y="126">倾斜 θ</text>
+
+  <line x1="40" y1="345" x2="460" y2="345" stroke="#7f93a6" stroke-width="2"/>
+  <line x1="55" y1="337" x2="55" y2="353" stroke="#7f93a6" stroke-width="2"/>
+  <line x1="445" y1="337" x2="445" y2="353" stroke="#7f93a6" stroke-width="2"/>
+  <text class="b02-text b02-small" x="40" y="370">夹具/定位面：同一基准才可比较</text>
+  <text class="b02-text b02-small" x="40" y="394">同时记录温度、方向、量程、铁磁件和电流。</text>
+
+  <!-- panel b -->
+  <text class="b02-text b02-panel" x="20" y="432">(b) 不同仪器回答不同问题</text>
+
+  <rect class="b02-card" x="20" y="450" width="520" height="120" rx="10"/>
+  <text class="b02-text b02-label" x="36" y="480">Hall 探头 / 高斯计</text>
+  <text class="b02-text b02-small" x="36" y="508">被测量：某点的 B 分量</text>
+  <text class="b02-text b02-small" x="36" y="534">得到：局部场、气隙变化、表面分布</text>
+  <text class="b02-text b02-note" x="36" y="558">不能直接得到 Br、HcJ 等材料参数</text>
+
+  <rect class="b02-card" x="20" y="586" width="520" height="120" rx="10"/>
+  <text class="b02-text b02-label" x="36" y="616">Helmholtz 线圈 + 磁通计</text>
+  <text class="b02-text b02-small" x="36" y="644">被测量：磁矩 m = J·V</text>
+  <text class="b02-text b02-small" x="36" y="670">得到：整体磁矩、平均极化、磁化角</text>
+  <text class="b02-text b02-note" x="36" y="694">开路测量；读的是工作点 Jm，不是局部 B</text>
+
+  <rect class="b02-card" x="20" y="722" width="520" height="140" rx="10"/>
+  <text class="b02-text b02-label" x="36" y="752">磁滞仪 / VSM / 脉冲场磁强计</text>
+  <text class="b02-text b02-small" x="36" y="780">被测量：B 或 J 随 H 的变化；m 随 H、T 的变化</text>
+  <text class="b02-text b02-small" x="36" y="806">得到：B–H、J–H 回线，Br、Hc、损耗等</text>
+  <text class="b02-text b02-note" x="36" y="830">闭路/开路不同；样品形状、退磁修正和测试</text>
+  <text class="b02-text b02-note" x="36" y="850">最大场决定结果能否代表材料</text>
+
+  <text class="b02-text b02-note" x="20" y="896">注：同一读数必须带几何、温度、方向、夹具和样品状态。</text>
+</svg>

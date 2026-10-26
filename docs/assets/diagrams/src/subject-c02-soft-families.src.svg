@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 600" width="880" role="img" aria-labelledby="c02Title c02Desc" height="600">
+  <title id="c02Title">金属软磁材料家族与形态</title>
+  <desc id="c02Desc">把晶态金属软磁、非晶、纳米晶和粉末复合材料按形态与常见取舍并列展示，底部给出从频率、磁通、损耗、形态到成本的选材问题链。图为结构示意，不是性能排名。</desc>
+  <style>
+    .bg{fill:#ffffff}
+    .root{fill:#e8f1f8;stroke:#6d93b2;stroke-width:1.5}
+    .col1{fill:#eef5fb;stroke:#9bb9d1;stroke-width:1.2}
+    .col2{fill:#eef7f1;stroke:#9ec4ad;stroke-width:1.2}
+    .col3{fill:#f7f1e9;stroke:#c9b08d;stroke-width:1.2}
+    .col4{fill:#f4eff7;stroke:#b7a3c6;stroke-width:1.2}
+    .item{fill:#ffffff;stroke:#c7d6e3;stroke-width:1}
+    .q{fill:#fbf6ea;stroke:#d8bd84;stroke-width:1}
+    .lbl{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:14px;fill:#26323d}
+    .small{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:12.5px;fill:#55636f}
+    .tiny{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:11.5px;fill:#6b7885}
+    .title{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:17px;font-weight:600;fill:#1f3344}
+    .arrow{stroke:#7b8fa3;stroke-width:1.4;fill:none}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="880" height="600"/>
+  <text class="title" x="40" y="34">金属软磁材料家族：晶体状态、形态与常见取舍</text>
+
+  <rect class="root" x="288" y="56" width="304" height="40" rx="7"/>
+  <text class="lbl" x="440" y="82" text-anchor="middle" font-weight="600">金属软磁（按晶体状态与形态分）</text>
+
+  <path class="arrow" d="M360,96 L200,128"/>
+  <path class="arrow" d="M440,96 L440,128"/>
+  <path class="arrow" d="M520,96 L680,128"/>
+
+  <!-- Column 1 -->
+  <rect class="col1" x="40" y="130" width="220" height="252" rx="8"/>
+  <text class="lbl" x="150" y="156" text-anchor="middle" font-weight="600">晶态合金（片 / 叠片）</text>
+  <rect class="item" x="56" y="172" width="188" height="40" rx="4"/>
+  <text class="small" x="150" y="197" text-anchor="middle">电工纯铁 / 低碳钢</text>
+  <rect class="item" x="56" y="220" width="188" height="40" rx="4"/>
+  <text class="small" x="150" y="245" text-anchor="middle">硅钢：无取向 / 取向</text>
+  <rect class="item" x="56" y="268" width="188" height="40" rx="4"/>
+  <text class="small" x="150" y="293" text-anchor="middle">NiFe 坡莫合金</text>
+  <rect class="item" x="56" y="316" width="188" height="40" rx="4"/>
+  <text class="small" x="150" y="341" text-anchor="middle">CoFe 合金</text>
+  <text class="tiny" x="56" y="370">特征：厚度、叠压、冲剪应力</text>
+
+  <!-- Column 2 -->
+  <rect class="col2" x="272" y="130" width="176" height="252" rx="8"/>
+  <text class="lbl" x="360" y="156" text-anchor="middle" font-weight="600">非晶（薄带）</text>
+  <rect class="item" x="286" y="172" width="148" height="40" rx="4"/>
+  <text class="small" x="360" y="197" text-anchor="middle">Fe 基非晶</text>
+  <rect class="item" x="286" y="220" width="148" height="40" rx="4"/>
+  <text class="small" x="360" y="245" text-anchor="middle">Co 基非晶</text>
+  <rect class="item" x="286" y="268" width="148" height="40" rx="4"/>
+  <text class="small" x="360" y="293" text-anchor="middle">FeNi 基非晶</text>
+  <rect class="item" x="286" y="316" width="148" height="40" rx="4"/>
+  <text class="small" x="360" y="341" text-anchor="middle">薄带磁芯</text>
+  <text class="tiny" x="286" y="370">特征：薄带、低损耗、脆性</text>
+
+  <!-- Column 3 -->
+  <rect class="col3" x="460" y="130" width="176" height="252" rx="8"/>
+  <text class="lbl" x="548" y="156" text-anchor="middle" font-weight="600">纳米晶（薄带）</text>
+  <rect class="item" x="474" y="172" width="148" height="40" rx="4"/>
+  <text class="small" x="548" y="197" text-anchor="middle">Fe 基纳米晶</text>
+  <rect class="item" x="474" y="220" width="148" height="40" rx="4"/>
+  <text class="small" x="548" y="245" text-anchor="middle">薄带 / 磁芯</text>
+  <rect class="item" x="474" y="268" width="148" height="40" rx="4"/>
+  <text class="small" x="548" y="293" text-anchor="middle">热处理后晶粒细化</text>
+  <rect class="item" x="474" y="316" width="148" height="40" rx="4"/>
+  <text class="small" x="548" y="341" text-anchor="middle">高频 / 共模磁芯</text>
+  <text class="tiny" x="474" y="370">特征：高 μ、低损耗、需退火</text>
+
+  <!-- Column 4 -->
+  <rect class="col4" x="648" y="130" width="192" height="252" rx="8"/>
+  <text class="lbl" x="744" y="156" text-anchor="middle" font-weight="600">粉末复合（3D 磁路）</text>
+  <rect class="item" x="662" y="172" width="164" height="40" rx="4"/>
+  <text class="small" x="744" y="197" text-anchor="middle">铁粉芯</text>
+  <rect class="item" x="662" y="220" width="164" height="40" rx="4"/>
+  <text class="small" x="744" y="245" text-anchor="middle">软磁复合材料 SMC</text>
+  <rect class="item" x="662" y="268" width="164" height="40" rx="4"/>
+  <text class="small" x="744" y="293" text-anchor="middle">分布式气隙</text>
+  <rect class="item" x="662" y="316" width="164" height="40" rx="4"/>
+  <text class="small" x="744" y="341" text-anchor="middle">压制成型 / 绝缘包覆</text>
+  <text class="tiny" x="662" y="370">特征：形状自由、μ 较低</text>
+
+  <!-- Question chain -->
+  <text class="lbl" x="40" y="414" font-weight="600">选材时按问题顺序走，而不是先找“最高 μ”</text>
+  <rect class="q" x="40" y="426" width="140" height="38" rx="5"/>
+  <text class="small" x="110" y="450" text-anchor="middle">① 频率？</text>
+  <rect class="q" x="196" y="426" width="154" height="38" rx="5"/>
+  <text class="small" x="273" y="450" text-anchor="middle">② 磁通 / 饱和裕量？</text>
+  <rect class="q" x="366" y="426" width="140" height="38" rx="5"/>
+  <text class="small" x="436" y="450" text-anchor="middle">③ 损耗 / 温升？</text>
+  <rect class="q" x="522" y="426" width="154" height="38" rx="5"/>
+  <text class="small" x="599" y="450" text-anchor="middle">④ 形态 / 气隙？</text>
+  <rect class="q" x="692" y="426" width="148" height="38" rx="5"/>
+  <text class="small" x="766" y="450" text-anchor="middle">⑤ 成本 / 供应？</text>
+  <path class="arrow" d="M180,445 L196,445 M350,445 L366,445 M506,445 L522,445 M676,445 L692,445"/>
+
+  <text class="small" x="40" y="494">同一列不是性能排名；晶态、非晶、纳米晶和粉末复合各有适用区间。</text>
+  <text class="small" x="40" y="518">材料数据必须绑定厚度、频率、磁通摆幅、温度、应力与热处理状态。</text>
+  <text class="tiny" x="40" y="552">示意，非按比例；图中只表达分类关系，不给出统一数值轴或评分。</text>
+</svg>

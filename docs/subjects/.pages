@@ -1,10 +1,33 @@
 title: 学科体系
 nav:
-  - index.md
-  - 磁场与测量: field-and-measurement.md
-  - 磁各向异性: anisotropy.md
-  - 磁化与损耗: magnetization-and-loss.md
-  - 软磁材料: soft-magnetic-materials.md
-  - 永磁材料: permanent-magnets.md
-  - 角度检测原理: angle-sensing.md
-  - 电机与机械角: motor-angle.md
+  - 总览: index.md
+  - 学习路径: learning-paths.md
+  - 术语与符号: glossary.md
+  - 磁学语言与物理图像:
+      - 磁场、材料响应与磁通: field-and-measurement.md
+      - 磁性起源与分类: magnetic-origin-and-classes.md
+      - 磁畴与畴壁: magnetic-domains.md
+      - 各向异性与磁致伸缩: anisotropy.md
+      - 磁通、磁阻与磁路: magnetic-circuits.md
+      - 退磁场与形状: demagnetizing-field-and-shape.md
+  - 磁化、曲线与动态行为:
+      - 技术磁化与磁滞: magnetization-and-hysteresis.md
+      - 磁测量: magnetic-measurement.md
+      - 反磁化与矫顽力: coercivity-mechanisms.md
+      - 动态磁化与损耗: loss-and-temperature.md
+  - 软磁与永磁材料:
+      - 软磁性能参数: soft-magnetic-parameters.md
+      - 金属软磁与非晶纳米晶: soft-magnetic-materials.md
+      - 软磁铁氧体: soft-ferrites.md
+      - 永磁参数与工作点: permanent-magnet-parameters.md
+      - 永磁材料家族: permanent-magnets.md
+      - 温度稳定性与退磁: magnet-stability-and-demagnetization.md
+  - 角度传感与系统:
+      - 磁电阻效应: magnetoresistance.md
+      - 磁场到角度: angle-sensing.md
+      - 编码器磁体与安装: encoder-magnet-and-mounting.md
+      - 角度误差机理: angle-error-mechanisms.md
+      - 机械角与电角度: motor-angle.md
+      - 分辨率、带宽与输出: encoder-output-and-dynamics.md
+  - 已归档:
+      - 磁化与损耗（已拆分）: magnetization-and-loss.md

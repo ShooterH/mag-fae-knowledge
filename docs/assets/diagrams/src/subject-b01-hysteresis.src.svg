@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" width="560" role="img" aria-labelledby="b01-title b01-desc" height="720">
+  <title id="b01-title">技术磁化与磁滞回线示意</title>
+  <desc id="b01-desc">B-H 坐标中的完整磁滞回线、初始磁化曲线，以及 Bs、Br、HcB 等定义点。示意图，不是实测数据。</desc>
+  <defs>
+    <marker id="b01-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4f6f"/>
+    </marker>
+    <marker id="b01-arrow-soft" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a6a3d"/>
+    </marker>
+  </defs>
+
+  <style>
+    .b01-axis { stroke: #40566b; stroke-width: 1.7; fill: none; }
+    .b01-loop { stroke: #2f6f9f; stroke-width: 3; fill: none; }
+    .b01-initial { stroke: #b87324; stroke-width: 2.6; fill: none; stroke-dasharray: 8 6; }
+    .b01-guide { stroke: #7f93a6; stroke-width: 1.1; stroke-dasharray: 3 3; fill: none; }
+    .b01-text { font-family: "Microsoft YaHei", "Noto Sans SC", "PingFang SC", sans-serif; fill: #22303f; }
+    .b01-title { font-size: 21px; font-weight: 700; }
+    .b01-label { font-size: 20px; font-weight: 600; }
+    .b01-small { font-size: 17px; }
+    .b01-note { font-size: 16px; fill: #5a6875; }
+  </style>
+
+  <text class="b01-text b01-title" x="20" y="36">技术磁化与磁滞回线（示意，非实测）</text>
+
+  <!-- axes -->
+  <path class="b01-axis" d="M 50 400 L 535 400" marker-end="url(#b01-arrow)"/>
+  <path class="b01-axis" d="M 290 690 L 290 58" marker-end="url(#b01-arrow)"/>
+  <text class="b01-text b01-label" x="400" y="470">H / (A·m⁻¹)</text>
+  <text class="b01-text b01-label" x="302" y="84">B / T</text>
+  <text class="b01-text b01-small" x="266" y="424">O</text>
+
+  <!-- main hysteresis loop, upper descending branch -->
+  <path class="b01-loop" d="M 470 150
+      C 410 152 350 165 320 190
+      C 305 202 296 210 290 220
+      C 282 270 272 320 260 350
+      C 248 378 232 392 220 400
+      C 190 450 150 590 110 640"/>
+  <path d="M 355 160 L 322 188" stroke="#2f6f9f" stroke-width="2.6" fill="none" marker-end="url(#b01-arrow)"/>
+  <path d="M 272 325 L 261 356" stroke="#2f6f9f" stroke-width="2.6" fill="none" marker-end="url(#b01-arrow)"/>
+  <path d="M 190 455 L 150 585" stroke="#2f6f9f" stroke-width="2.6" fill="none" marker-end="url(#b01-arrow)"/>
+
+  <!-- lower ascending branch -->
+  <path class="b01-loop" d="M 110 640
+      C 160 630 240 600 290 580
+      C 330 560 348 500 360 400
+      C 380 310 430 190 470 150"/>
+  <path d="M 195 622 L 245 602" stroke="#2f6f9f" stroke-width="2.6" fill="none" marker-end="url(#b01-arrow)"/>
+  <path d="M 351 470 L 359 422" stroke="#2f6f9f" stroke-width="2.6" fill="none" marker-end="url(#b01-arrow)"/>
+  <path d="M 428 195 L 460 157" stroke="#2f6f9f" stroke-width="2.6" fill="none" marker-end="url(#b01-arrow)"/>
+
+  <!-- initial magnetization curve -->
+  <path class="b01-initial" d="M 290 400
+      C 330 380 360 340 390 300
+      C 420 245 445 190 470 150"/>
+  <path d="M 396 290 L 420 252" stroke="#b87324" stroke-width="2.4" fill="none" marker-end="url(#b01-arrow-soft)"/>
+
+  <!-- definition points -->
+  <path class="b01-guide" d="M 470 150 L 482 140"/>
+  <text class="b01-text b01-label" x="486" y="146">Bs</text>
+
+  <path class="b01-guide" d="M 290 220 L 304 208"/>
+  <text class="b01-text b01-label" x="308" y="212">Br</text>
+
+  <path class="b01-guide" d="M 360 400 L 370 420"/>
+  <text class="b01-text b01-label" x="376" y="438">+HcB</text>
+
+  <path class="b01-guide" d="M 220 400 L 208 420"/>
+  <text class="b01-text b01-label" x="132" y="438">−HcB</text>
+
+  <path class="b01-guide" d="M 290 580 L 304 598"/>
+  <text class="b01-text b01-label" x="308" y="616">−Br</text>
+
+  <path class="b01-guide" d="M 110 640 L 98 660"/>
+  <text class="b01-text b01-label" x="70" y="678">−Bs</text>
+
+  <!-- legend -->
+  <line x1="60" y1="90" x2="102" y2="90" stroke="#2f6f9f" stroke-width="3"/>
+  <text class="b01-text b01-small" x="110" y="96">主回线</text>
+  <line x1="60" y1="124" x2="102" y2="124" stroke="#b87324" stroke-width="2.6" stroke-dasharray="8 6"/>
+  <text class="b01-text b01-small" x="110" y="130">初始磁化曲线</text>
+  <text class="b01-text b01-note" x="20" y="706">曲线形状随材料、温度、频率和磁化历史变化。</text>
+</svg>

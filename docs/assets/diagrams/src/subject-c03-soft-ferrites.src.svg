@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="880" role="img" aria-labelledby="c03Title c03Desc" height="560">
+  <title id="c03Title">软磁铁氧体：MnZn、NiZn 与六角铁氧体的典型使用频段</title>
+  <desc id="c03Desc">用对数频率轴示意教材表九点一给出的 MnZn、NiZn 和六角铁氧体典型使用频率范围，并在下方列出电阻率与高频取舍。频段范围有重叠，不能只按频率一个指标选材。</desc>
+  <style>
+    .bg{fill:#ffffff}
+    .axis{stroke:#5b6b7c;stroke-width:1.5;fill:none}
+    .tick{stroke:#c9d6e2;stroke-width:1}
+    .bar1{fill:#b9d3e8;stroke:#4f7fa6;stroke-width:1}
+    .bar2{fill:#c9e3d2;stroke:#4f8a63;stroke-width:1}
+    .bar3{fill:#e8d6bd;stroke:#a97c44;stroke-width:1}
+    .card1{fill:#eef5fb;stroke:#9bb9d1;stroke-width:1.2}
+    .card2{fill:#eef7f1;stroke:#9ec4ad;stroke-width:1.2}
+    .lbl{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:14px;fill:#26323d}
+    .small{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:12.5px;fill:#55636f}
+    .tiny{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:11.5px;fill:#6b7885}
+    .title{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif;font-size:17px;font-weight:600;fill:#1f3344}
+  </style>
+
+  <rect class="bg" x="0" y="0" width="880" height="560"/>
+  <text class="title" x="40" y="34">软磁铁氧体的典型使用频段：范围重叠，选择不只看频率</text>
+
+  <!-- frequency axis -->
+  <line class="axis" x1="90" y1="120" x2="800" y2="120"/>
+  <path class="axis" d="M790,120 L800,120 M790,120 L796,116 M790,120 L796,124"/>
+  <text class="small" x="760" y="106">频率（对数轴）</text>
+
+  <g>
+    <line class="tick" x1="90" y1="120" x2="90" y2="318"/>
+    <line class="tick" x1="206.7" y1="120" x2="206.7" y2="318"/>
+    <line class="tick" x1="323.3" y1="120" x2="323.3" y2="318"/>
+    <line class="tick" x1="440" y1="120" x2="440" y2="318"/>
+    <line class="tick" x1="556.7" y1="120" x2="556.7" y2="318"/>
+    <line class="tick" x1="673.3" y1="120" x2="673.3" y2="318"/>
+    <line class="tick" x1="790" y1="120" x2="790" y2="318"/>
+    <text class="tiny" x="90" y="338" text-anchor="middle">1 kHz</text>
+    <text class="tiny" x="206.7" y="338" text-anchor="middle">10 kHz</text>
+    <text class="tiny" x="323.3" y="338" text-anchor="middle">100 kHz</text>
+    <text class="tiny" x="440" y="338" text-anchor="middle">1 MHz</text>
+    <text class="tiny" x="556.7" y="338" text-anchor="middle">10 MHz</text>
+    <text class="tiny" x="673.3" y="338" text-anchor="middle">100 MHz</text>
+    <text class="tiny" x="790" y="338" text-anchor="middle">1 GHz</text>
+  </g>
+
+  <!-- bars -->
+  <text class="lbl" x="40" y="196">MnZn</text>
+  <rect class="bar1" x="90" y="180" width="431.5" height="26" rx="5"/>
+  <text class="small" x="104" y="198" fill="#244a66">1 kHz – 5 MHz（教材表 9.1）</text>
+
+  <text class="lbl" x="40" y="246">NiZn</text>
+  <rect class="bar2" x="90" y="230" width="639" height="26" rx="5"/>
+  <text class="small" x="104" y="248" fill="#245c3a">1 kHz – 300 MHz（教材表 9.1）</text>
+
+  <text class="lbl" x="40" y="296">六角</text>
+  <rect class="bar3" x="729" y="280" width="61" height="26" rx="5"/>
+  <text class="tiny" x="800" y="318" text-anchor="end">300 MHz – 1 GHz</text>
+
+  <text class="tiny" x="90" y="366">三条范围有重叠：低频段 MnZn 常占优，高频段 NiZn 常占优，六角铁氧体用于更高频的特定场景。</text>
+
+  <!-- cards -->
+  <rect class="card1" x="60" y="386" width="370" height="126" rx="8"/>
+  <text class="lbl" x="80" y="412" font-weight="600">MnZn（尖晶石）</text>
+  <text class="small" x="80" y="438">• μ<tspan font-size="10" dy="3">i</tspan><tspan dy="-3"> 高，低频损耗低</tspan></text>
+  <text class="small" x="80" y="462">• 电阻率低（约 10 Ω·m 量级）</text>
+  <text class="small" x="80" y="486">• 大功率、低频到中频磁芯常见</text>
+
+  <rect class="card2" x="450" y="386" width="370" height="126" rx="8"/>
+  <text class="lbl" x="470" y="412" font-weight="600">NiZn（尖晶石）</text>
+  <text class="small" x="470" y="438">• 电阻率高（约 10⁶ Ω·m 量级）</text>
+  <text class="small" x="470" y="462">• 高频涡流损耗低，适合高频磁芯</text>
+  <text class="small" x="470" y="486">• Bs 与温度特性受牌号影响，需查曲线</text>
+
+  <text class="small" x="40" y="534">教材表 9.1 给出的是家族级典型范围，不等于具体牌号保证；铁氧体 Bs 明显低于金属软磁，饱和与偏置仍须校核。</text>
+  <text class="tiny" x="40" y="552">示意，非按比例；频率范围来自教材表 9.1，具体牌号以现行原厂数据表为准。</text>
+</svg>
